@@ -44,6 +44,7 @@ pressed = set()
 outport = mido.open_output(host)
 
 while True:
+    sleep(0.01)
     for i in range(len(rows)):
         GPIO.setup(rows[i], GPIO.OUT, initial = GPIO.LOW)
         for j in range(len(cols)):
